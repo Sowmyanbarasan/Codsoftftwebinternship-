@@ -1,0 +1,201 @@
+/* Basic Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    background: #f0f8ff;
+}
+
+/* About Section with 15cm Radius Circle Image */
+#about img {
+    width: 15cm;
+    height: 15cm;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+    border: 6px solid #00c6ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#skills li {
+    background: #00c6ff;
+    color: #fff;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+#skills li:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects .project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#projects img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#projects .project h3 {
+    margin-top: 15px;
+    color: #0072ff;
+    font-size: 1.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Popup for Project Descriptions */
+#projects .project p {
+    position: relative;
+    cursor: pointer;
+    color: #444;
+    font-size: 1.1em;
+}
+
+#projects .project p:hover::after {
+    content: attr(data-description);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    background: #0072ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-size: 0.9em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Section */
+#resume a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00c6ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resume a:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact p {
+    margin: 5px 0;
+    color: #555;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Button Style */
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #00c6ff;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
